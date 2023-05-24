@@ -1,4 +1,5 @@
--setting up database:
+-setting up database:<br>
+
     1- update .env file with valid : POSTGRES_DB, POSTGRES_TEST_DB, POSTGRES_USER ,POSTGRES_PASSWORD  .
     
     2- run database command:
@@ -10,14 +11,16 @@
 
     3- run command db-migrate up .
 
--package installation instructions:
-    1-run command : npm install 
+-package installation instructions:<br>
+
+    run command : npm install 
 
 -API routs :<br>
-    1-Products: <br>
-    index : GET("/products") . <br>
-    show : GET ("/products/:id") . <br>
-    create: POST ("/products") =>(authorization token required - body JSON parameters:( name ,price,category) ) <br>
+
+    1-Products: 
+    index : GET("/products") . 
+    show : GET ("/products/:id") . 
+    create: POST ("/products") =>(authorization token required - body JSON parameters:( name ,price,category) ) 
 
     2-Users:
     index : GET ("/user")  =>(authorization token required)
@@ -29,11 +32,14 @@
     current_Orders_by_user : GET ("/order/current?user_id=")  =>(authorization token required - enter a valid user_id parameter) 
     closed_Orders_by_user : GET ("/order/closed?user_id= ")  =>(authorization token required - enter a valid user_id parameter)
 
-- to run tests : npm run test
-- to start the server : npm run start 
+- to run tests: <code> npm run test </code>
+     
+- to start the server : <code>npm run start </code>
+
 - Database port : in .env file => DB_PORT=5432
 - Backend port : in .env file => SERVER_PORT=3000
 - .env file: <br>
+
     POSTGRES_HOST=127.0.0.1 <br>
     POSTGRES_DB=shopping <br>
     POSTGRES_TEST_DB=shopping_test  <br>
